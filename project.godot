@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="GoodEditor"
+config/description="Map editor for 3x3 grid rhythm games such as Rhythia and Novastra"
+run/print_header=false
+config/use_custom_user_dir=true
+config/custom_user_dir_name="GoodEditor"
+config/features=PackedStringArray("4.5", "Mobile")
+run/low_processor_mode=true
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[display]
+
+window/subwindows/embed_subwindows=false
+
+[rendering]
+
+renderer/rendering_method="mobile"
+anti_aliasing/quality/msaa_2d=2
